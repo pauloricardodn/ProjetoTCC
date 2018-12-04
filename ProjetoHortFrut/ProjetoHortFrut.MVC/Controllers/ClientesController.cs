@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Web.Mvc;
+using Web_Api.Utilitarios;
 
 namespace ProjetoHortFrut.MVC.Controllers
 {
@@ -16,11 +17,11 @@ namespace ProjetoHortFrut.MVC.Controllers
         private readonly IEstadoAppService _estadoAppService;
         private readonly ICidadesAppService _cidadesAppService;
 
-        public ClientesController(IClienteAppService clienteApp, IEstadoAppService estadoApp, ICidadesAppService ICidadeAppService, IBancoAppService IBancoAppService)
+        public ClientesController(IClienteAppService clienteApp, IEstadoAppService estadoApp, ICidadesAppService cidadeAppService)
         {
             _clienteApp = clienteApp;
             _estadoAppService = estadoApp;
-            _cidadesAppService = ICidadeAppService;
+            _cidadesAppService = cidadeAppService;
         }
         // GET: Clientes/Create
         public ActionResult CadastraCliente()

@@ -1,5 +1,5 @@
-﻿using ProjetoHotFrut.Application;
-using ProjetoHotFrut.Application.Interfaces;
+﻿using ProjetoHortFrut.Application;
+using ProjetoHortFrut.Application.Interfaces;
 using SimpleInjector;
 namespace ProjetoHortFrut.MVC.App_Start
 {
