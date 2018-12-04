@@ -1,0 +1,59 @@
+﻿@{
+    Layout = "~/Views/Usuarios/_LayoutLogin.cshtml";
+}
+<div id="login-page" class="row login">
+    <div class="col s12 z-depth-4 card-panel">
+        @using (Ajax.BeginForm("Login", "Usuarios", null, new AjaxOptions
+        {
+            HttpMethod = "POST",
+            OnSuccess = "sucesso()",
+            OnFailure = "erro(xhr)",
+            OnBegin = "progresso",
+            OnComplete = "fim"
+        }, new { @id = "login" }))
+        {
+            <div class="row divErroNaOperacao">
+                <div class="col s12">
+                    <h6 class="erroOperacao"></h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12 center">
+                    <p class="center login-form-text">Login - SisBank</p>
+                </div>
+            </div>
+            <div class="row margin">
+                <div class="input-field col s12">
+                    <i class="large material-icons prefix">account_box</i>
+                    <input id="usuario" type="text" name="nome">
+                    <label for="nome" class="center-align">Usuário</label>
+                    <span class="displayNone" id="usuarioError"></span>
+                </div>
+            </div>
+            <div class="row margin">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">enhanced_encryption</i>
+                    <input id="senha" type="password" name="senha">
+                    <label for="senha">Password</label>
+                    <span class="displayNone" id="senhaError"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <button class="btn waves-effect waves-light col s12" id="btnLogin" type="submit">Login</button>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+<script>
+    function sucesso() {
+        debugger;
+        window.location = "/Home/Index";
+    }
+    function erro(xhr) {
+        debugger;
+        $(".divErroNaOperacao").fadeIn(3000);
+        $(".erroOperacao").html("<i class='tiny material-icons'>error</i>" + xhr.responseText);
+    }
+</script>

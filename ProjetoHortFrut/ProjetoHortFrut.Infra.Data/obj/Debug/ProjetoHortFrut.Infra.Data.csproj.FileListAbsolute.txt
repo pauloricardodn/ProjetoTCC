@@ -1,0 +1,7 @@
+C:\Users\Paulo\Documents\Visual Studio 2015\Projects\ProjetoHortFrut\ProjetoHortFrut.Infra.Data\bin\Debug\ProjetoHortFrut.Infra.Data.dll
+C:\Users\Paulo\Documents\Visual Studio 2015\Projects\ProjetoHortFrut\ProjetoHortFrut.Infra.Data\bin\Debug\ProjetoHortFrut.Infra.Data.pdb
+C:\Users\Paulo\Documents\Visual Studio 2015\Projects\ProjetoHortFrut\ProjetoHortFrut.Infra.Data\bin\Debug\ProjetoHortFrut.Domain.dll
+C:\Users\Paulo\Documents\Visual Studio 2015\Projects\ProjetoHortFrut\ProjetoHortFrut.Infra.Data\bin\Debug\ProjetoHortFrut.Domain.pdb
+C:\Users\Paulo\Documents\Visual Studio 2015\Projects\ProjetoHortFrut\ProjetoHortFrut.Infra.Data\obj\Debug\ProjetoHortFrut.Infra.Data.csprojResolveAssemblyReference.cache
+C:\Users\Paulo\Documents\Visual Studio 2015\Projects\ProjetoHortFrut\ProjetoHortFrut.Infra.Data\obj\Debug\ProjetoHortFrut.Infra.Data.dll
+C:\Users\Paulo\Documents\Visual Studio 2015\Projects\ProjetoHortFrut\ProjetoHortFrut.Infra.Data\obj\Debug\ProjetoHortFrut.Infra.Data.pdb

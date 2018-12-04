@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{D2C42856-5FA3-4989-B5B9-DAD081AC1DBA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{F2025A7A-8BEA-4D47-BC88-010CB73A4EA3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{A582BD88-3EF6-473D-ADFC-4AB3D3A4BDD5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{6F3CA993-2333-4020-9B83-727D3C8A97E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{A8E4610C-9121-4DA6-8375-FABD673DE04C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoHortFrut.Infra.Data", "ProjetoHortFrut.Infra.Data\ProjetoHortFrut.Infra.Data.csproj", "{76B67358-A601-4EB8-BBC3-F984A47A316E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoHortFrut.Domain", "ProjetoHortFrut.Domain\ProjetoHortFrut.Domain.csproj", "{8E97A169-04AD-4A61-9E6D-22FD73FC3569}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Api", "2 - Api", "{D66C8FF4-8884-4392-846F-C5C1A5047C52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{EBD29FF5-5EC2-4E23-A29E-61201671479A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoHortFrut.Application", "ProjetoHortFrut.Application\ProjetoHortFrut.Application.csproj", "{B646B064-68A8-4030-83B6-FE16B914F781}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoHortFrut.MVC", "ProjetoHortFrut.MVC\ProjetoHortFrut.MVC.csproj", "{ABCA95AB-4CBC-4760-87D6-BA74F6D3A8B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76B67358-A601-4EB8-BBC3-F984A47A316E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76B67358-A601-4EB8-BBC3-F984A47A316E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76B67358-A601-4EB8-BBC3-F984A47A316E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76B67358-A601-4EB8-BBC3-F984A47A316E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E97A169-04AD-4A61-9E6D-22FD73FC3569}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E97A169-04AD-4A61-9E6D-22FD73FC3569}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E97A169-04AD-4A61-9E6D-22FD73FC3569}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E97A169-04AD-4A61-9E6D-22FD73FC3569}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBD29FF5-5EC2-4E23-A29E-61201671479A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBD29FF5-5EC2-4E23-A29E-61201671479A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBD29FF5-5EC2-4E23-A29E-61201671479A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBD29FF5-5EC2-4E23-A29E-61201671479A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B646B064-68A8-4030-83B6-FE16B914F781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B646B064-68A8-4030-83B6-FE16B914F781}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B646B064-68A8-4030-83B6-FE16B914F781}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B646B064-68A8-4030-83B6-FE16B914F781}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABCA95AB-4CBC-4760-87D6-BA74F6D3A8B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABCA95AB-4CBC-4760-87D6-BA74F6D3A8B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABCA95AB-4CBC-4760-87D6-BA74F6D3A8B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABCA95AB-4CBC-4760-87D6-BA74F6D3A8B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A8E4610C-9121-4DA6-8375-FABD673DE04C} = {6F3CA993-2333-4020-9B83-727D3C8A97E6}
+		{76B67358-A601-4EB8-BBC3-F984A47A316E} = {A8E4610C-9121-4DA6-8375-FABD673DE04C}
+		{8E97A169-04AD-4A61-9E6D-22FD73FC3569} = {A582BD88-3EF6-473D-ADFC-4AB3D3A4BDD5}
+		{EBD29FF5-5EC2-4E23-A29E-61201671479A} = {D66C8FF4-8884-4392-846F-C5C1A5047C52}
+		{B646B064-68A8-4030-83B6-FE16B914F781} = {F2025A7A-8BEA-4D47-BC88-010CB73A4EA3}
+		{ABCA95AB-4CBC-4760-87D6-BA74F6D3A8B9} = {D2C42856-5FA3-4989-B5B9-DAD081AC1DBA}
+	EndGlobalSection
+EndGlobal
