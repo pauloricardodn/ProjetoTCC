@@ -29,7 +29,7 @@ namespace ProjetoHortFrut.MVC.Controllers
 
         [HttpPost]
         public ActionResult Login(UsuarioViewModel usuarioViewModel)
-        {
+     {
             try
             {
                 HttpResponseMessage statusCode;

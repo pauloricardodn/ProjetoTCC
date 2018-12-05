@@ -24,24 +24,15 @@
     </div>
     <header>
         <ul id="alteracoes" class="dropdown-content">
-            <li>@Html.ActionLink("Agência", "EditaAgencia", "Agencia")</li>
             <li>@Html.ActionLink("Clientes", "EditaCliente", "Clientes")</li>
-            <li>@Html.ActionLink("Conta", "EditaConta", "Contas")</li>
-            <li>@Html.ActionLink("Estorno", "DadosParaEstorno", "Operacoes")</li>
             <li>@Html.ActionLink("Usuários", "EditaUsuario", "Usuarios")</li>
         </ul>
         <ul id="cadastros" class="dropdown-content">
-            <li>@Html.ActionLink("Agências", "CadastraAgencia", "Agencia")</li>
-            <li>@Html.ActionLink("Contas", "CadastraConta", "Contas")</li>
             <li>@Html.ActionLink("Clientes", "CadastraCliente", "Clientes")</li>
             <li>@Html.ActionLink("Usuários", "CadastraUsuario", "Usuarios")</li>
         </ul>
         <ul id="operacoes" class="dropdown-content">
-            <li>@Html.ActionLink("Deposito", "Deposito", "Operacoes")</li>
-            <li>@Html.ActionLink("Extrato", "GetExtrato", "Operacoes")</li>
-            <li>@Html.ActionLink("Saldo", "Saldo", "Operacoes")</li>
-            <li>@Html.ActionLink("Saque", "Saque", "Operacoes")</li>
-            <li>@Html.ActionLink("Transferência", "Transferencia", "Operacoes")</li>
+            <li>@Html.ActionLink("Venda", "Venda", "Operacoes")</li>
         </ul>
         <nav class="fixed " id="menu">
             <div class="nav-wrapper #42a5f5 blue lighten-1">
@@ -52,17 +43,10 @@
                     {
                         var cliente = (ProjetoHortFrut.MVC.ViewModels.ClienteViewModel)Session["cliente"];
                         <span id="usuarioLogado">Bem Vindo(a): @cliente.nome</span>
-                        <ul class="right hide-on-med-and-down">
-                            @if (cliente.nivel.ToString() == "f")
-                            {
+                        <ul class="right hide-on-med-and-down">                           
                                 <li><a class="dropdown-button" href="#!" data-activates="alteracoes">Alteracões<i class="material-icons right">arrow_drop_down</i></a></li>
                                 <li><a class="dropdown-button" href="#!" data-activates="cadastros">Cadastros<i class="material-icons right">arrow_drop_down</i></a></li>
-                                <li><a class="dropdown-button" href="#!" data-activates="operacoes">Operações<i class="material-icons right">arrow_drop_down</i></a></li>
-                            }
-                            @if (cliente.nivel.ToString() == "c")
-                            {
-                                <li><a class="dropdown-button" href="#!" data-activates="operacoes">Operações<i class="material-icons right">arrow_drop_down</i></a></li>
-                            }
+                                <li><a class="dropdown-button" href="#!" data-activates="operacoes">Operações<i class="material-icons right">arrow_drop_down</i></a></li>                            
                         </ul>
                     }
                 }

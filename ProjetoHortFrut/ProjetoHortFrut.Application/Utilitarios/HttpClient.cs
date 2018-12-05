@@ -11,7 +11,7 @@ namespace Web_Api.Utilitarios
         {
 
             var HttpClientConf = new System.Net.Http.HttpClient();
-            HttpClientConf.BaseAddress = new Uri("http://localhost:36528/api/" + controller + "/");
+            HttpClientConf.BaseAddress = new Uri("http://localhost:4586/api/" + controller + "/");
             HttpClientConf.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
             return HttpClientConf;
@@ -20,7 +20,7 @@ namespace Web_Api.Utilitarios
         public static Uri HttpClientConfigGet(string url, object parameters)
         {
             var client = new HttpClient();
-            var builder = new UriBuilder("http://localhost:36528/api/"+url);
+            var builder = new UriBuilder("http://localhost:4586/api/" + url);
             var p = string.Empty;
             foreach (var parameter in new RouteValueDictionary(parameters))
                 p += $"{parameter.Key}={parameter.Value}&";

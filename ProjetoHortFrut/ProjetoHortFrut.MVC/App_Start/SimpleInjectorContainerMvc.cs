@@ -11,7 +11,11 @@ namespace ProjetoHortFrut.MVC.App_Start
             var container = new Container();            
 
             container.Register<IClienteAppService, ClienteAppService>();
-           
+
+            container.Register<ICidadesAppService, CidadeAppService>();
+
+            container.Register<IEstadoAppService, EstadoAppService>();
+
             container.Register<IUsuarioAppService, UsuarioAppService>();
 
             container.Verify();
